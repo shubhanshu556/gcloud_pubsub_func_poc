@@ -5,5 +5,7 @@ import com.google.cloud.tasks.v2.Task;
 
 public interface TaskQueueService {
 
-    void addTask(OrderTask task);
+    void addTask(OrderTask task) throws Exception;
+
+    void addTaskWithDelay(OrderTask task, long delayInSec) throws Exception;
 }

@@ -9,6 +9,6 @@ public interface MessageProcessor {
     abstract method, to handle multiple ways of processing based
      on business logic
     */
-    void processMessage(OrderTask task) throws Exception;
+    void processMessage(OrderTask task, long delay) throws Exception;
 
 }
